@@ -19,4 +19,7 @@ service DebugService {
 
     // ProposalsStream streams all proposals that are confirmed by hare.
     rpc ProposalsStream(google.protobuf.Empty) returns (stream Proposal);
+
+    // Configuration of the node.
+    rpc Configuration(google.protobuf.Empty) returns (Config);
 }

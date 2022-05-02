@@ -39,3 +39,7 @@ message Proposal {
     }
     Status status = 9;
 }
+
+message Config {
+    uint32 epochSize = 1; 
+}
